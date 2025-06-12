@@ -1,0 +1,187 @@
+body {
+    background: #f6f8fb;
+    font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+}
+
+.sidebar {
+    min-height: 100vh;
+    background: linear-gradient(180deg, #2c2d2f 80%, #eebbc3 120%);
+    color: #fff;
+    position: fixed;
+    width: 230px;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    box-shadow: 2px 0 10px rgba(50,50,50,0.03);
+}
+
+.sidebar .brand-avatar {
+    width: 75px;
+    height: 75px;
+    display: block;
+    margin: 0 auto 12px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 16px #eebbc388;
+    border: 2px solid #eebbc3;
+    background: #fff;
+}
+
+.sidebar h3 {
+    color: #eebbc3;
+}
+
+.sidebar .nav-link {
+    color: #eebbc3;
+    font-weight: 500;
+    font-size: 1.06rem;
+    margin-bottom: 10px;
+    border-radius: 7px;
+    transition: background 0.2s, color 0.2s;
+    padding: 10px 16px;
+    position: relative;
+}
+.sidebar .nav-link.active,
+.sidebar .nav-link:hover {
+    background: #eebbc3;
+    color: #232946;
+}
+.sidebar .nav-link i {
+    margin-right: 10px;
+}
+
+.sidebar .nav-link[title]::after {
+    content: attr(title);
+    position: absolute;
+    left: 110%;
+    top: 50%;
+    background: #232946;
+    color: #fff;
+    font-size: 0.95em;
+    padding: 4px 9px;
+    border-radius: 5px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.18s;
+    transform: translateY(-50%);
+    white-space: nowrap;
+    box-shadow: 0 2px 8px #23294644;
+}
+.sidebar .nav-link:hover[title]::after {
+    opacity: 1;
+}
+
+.main-content {
+    margin-left: 250px;
+    padding: 32px 32px 32px 12px;
+}
+.topbar {
+    background: #fff;
+    border-bottom: 1px solid #e0e6ed;
+    padding: 18px 32px 10px 32px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 24px rgba(34,34,34,0.07);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.topbar .avatar-admin {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #eebbc3;
+    margin-left: 10px;
+}
+
+.quick-cards .card {
+    border-radius: 14px;
+    box-shadow: 0 2px 14px rgba(34,34,34,0.09);
+    transition: transform 0.1s, box-shadow 0.1s;
+    border: none;
+    cursor: pointer;
+}
+.quick-cards .card:hover {
+    transform: translateY(-4px) scale(1.03);
+    box-shadow: 0 8px 24px rgba(34,34,34,0.13);
+}
+.quick-cards .card i {
+    font-size: 2.6rem;
+    margin-bottom: 5px;
+    display: block;
+}
+.quick-cards .btn {
+    font-size: 0.93rem;
+    margin-top: 8px;
+}
+
+.table-responsive {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px 10px;
+    box-shadow: 0 2px 10px rgba(34,34,34,0.04);
+    margin-bottom: 20px;
+}
+.table thead {
+    background-color: #f3d2c1;
+}
+.table th {
+    color: #232946;
+    font-weight: 600;
+}
+.table td, .table th {
+    vertical-align: middle;
+}
+.badge.bg-primary, .badge.bg-success,
+.badge.bg-warning, .badge.bg-danger {
+    font-size: 1em;
+    padding: 7px 14px;
+    border-radius: 8px;
+}
+.alert-info {
+    background: #eebbc3;
+    color: #232946;
+    border: none;
+}
+.btn-outline-primary, .btn-outline-success, .btn-outline-warning {
+    border-radius: 6px;
+    font-weight: 500;
+}
+.btn-outline-primary:hover, .btn-outline-success:hover, .btn-outline-warning:hover {
+    box-shadow: 0 3px 8px #eebbc377;
+}
+::-webkit-scrollbar-thumb {
+    background: #eebbc3;
+    border-radius: 5px;
+}
+::-webkit-scrollbar {
+    background: #232946;
+    width: 8px;
+}
+@media (max-width: 991px) {
+    .sidebar { position: static; width: 100%; min-height: auto; }
+    .main-content { margin-left: 0; padding: 18px 5px;}
+    .topbar { padding: 10px 10px 7px 10px; }
+}
+@media (max-width: 600px) {
+    .sidebar { padding: 6px;}
+    .main-content { padding: 8px 2px;}
+    .topbar { border-radius: 8px; }
+    .table-responsive { padding: 7px 2px;}
+}
+.footer-admin {
+    text-align: center;
+    color: #b8b8b8;
+    margin-top: 22px;
+    font-size: 0.98em;
+}
+.bg-primary,
+.badge.bg-primary,
+.btn.bg-primary,
+.table thead th.bg-primary,
+.card-header.bg-primary {
+  background: linear-gradient(179deg, #2c2d2f 30%, #eebbc3 100%) !important;
+  color: #fff !important;
+  border: none !important;
+}

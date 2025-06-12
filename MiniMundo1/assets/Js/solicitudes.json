@@ -1,0 +1,43 @@
+[
+    {
+        "solicitante_id": "38",
+        "tipo": "editar_clase",
+        "entidad_id": 13,
+        "datos": {
+            "nombre": "Inglés Básico",
+            "periodo": "2025-1",
+            "profesor_id": 36,
+            "cup_maximo": 30
+        },
+        "estado": "pendiente",
+        "fecha_solicitud": "2025-06-12 05:26:31",
+        "fecha_respuesta": null,
+        "director_id": null,
+        "respuesta": null,
+        "id": 1
+    },
+    {
+        "solicitante_id": "38",
+        "tipo": "eliminar_clase",
+        "entidad_id": 17,
+        "datos": [],
+        "estado": "pendiente",
+        "fecha_solicitud": "2025-06-12 05:26:57",
+        "fecha_respuesta": null,
+        "director_id": null,
+        "respuesta": null,
+        "id": 2
+    },
+    {
+        "solicitante_id": "38",
+        "tipo": "eliminar_clase",
+        "entidad_id": 13,
+        "datos": [],
+        "estado": "pendiente",
+        "fecha_solicitud": "2025-06-12 16:03:47",
+        "fecha_respuesta": null,
+        "director_id": null,
+        "respuesta": null,
+        "id": 3
+    }
+]
